@@ -60,6 +60,17 @@ plugins:
       pagination_per_page: 2
       pagination_url_format: "page/{page}"
 
+nav:
+- Profile:
+  -  About Us: 'About_us.md'
+  - Contact us: 'Contact_us.md'
+  - Our Vision: 'Our_vision.md'
+
+- Documentation:
+  - API Documentation: 'API Documentation.md'
+  - FAQs: 'FAQs.md'
+  - Troubelshoot: 'Troubelshooting.md'
+    
 
 
 copyright: Copyright © 2023 Your Company Name
