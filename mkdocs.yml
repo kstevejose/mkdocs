@@ -1,10 +1,13 @@
-site_name: GemSahay
+site_name: Sample Site
 theme:
   name: 'material'
   custom_dir: docs
   extra_css:
     - stylesheets/extra.css
   features:
+    - search
+    - search.suggest
+    - search.highlight
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
@@ -12,33 +15,10 @@ theme:
     - navigation.expand
     - navigation.indexes
     - navigation.top
-    - search.suggest
-    - search.highlight
     - content.tab.link
     - content.code.copy
   language: en
-  palette:
-    - primary: custom
-      # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
-
+ 
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -46,7 +26,7 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
-      title: On this page
+      title: Table of Contents
   - pymdownx.arithmatex
   - footnotes
   - pymdownx.details
@@ -55,22 +35,26 @@ markdown_extensions:
   - attr_list
 
 plugins:
+  - search:
   - blog:
       pagination: true
       pagination_per_page: 2
       pagination_url_format: "page/{page}"
 
+palette:
+  - primary: indigo
+
 nav:
 - Profile:
-  -  About Us: 'About_us.md'
+  - About Us: 'About_us.md'
   - Contact us: 'Contact_us.md'
   - Our Vision: 'Our_vision.md'
 
 - Documentation:
   - API Documentation: 'API Documentation.md'
   - FAQs: 'FAQs.md'
-  - Troubelshoot: 'Troubelshooting.md'
+  - Troubelshooting: 'Troubleshooting.md'
     
 
 
-copyright: Copyright © 2023 Your Company Name
+copyright: Copyright © 2023 Original Creations
