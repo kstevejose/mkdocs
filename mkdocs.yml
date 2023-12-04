@@ -21,6 +21,7 @@ theme:
  
 markdown_extensions:
   - pymdownx.highlight
+  - codehilite
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
@@ -50,10 +51,12 @@ nav:
   - Contact us: 'Contact_us.md'
   - Our Vision: 'Our_vision.md'
 
-- Documentation:
+- SQL Joins:
   - SQL Joins: 'SQL Joins.md'
-  - FAQs: 'FAQs.md'
-  - Troubelshooting: 'Troubleshooting.md'
+  - INNER JOIN: 'INNER_JOIN.md'
+  - FULL JOIN: 'FULL_JOIN.md'
+  - RIGHT JOIN: 'RIGHT_JOIN.md'
+  - LEFT JOIN: 'LEFT_JOIN.md'
     
 
 
